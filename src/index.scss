@@ -1,5 +1,6 @@
+@import "./colors.scss";
+@import "./theme.scss";
+@import "./common.scss";
 
-body{
-    margin: 0;
-    // background: red;
-}
+// blocks
+@import "./blocks/button.scss";

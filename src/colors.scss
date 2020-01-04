@@ -1,4 +1,18 @@
 $nm-background: #e0e5ec;
-$nm-shadow-right: 9px 9px 16px rgba(163, 177, 198, 0.6);
-$nm-shadow-left: -9px -9px 16px rgba(255, 255, 255, 0.5);
-$nm-radius: 4;
+
+@mixin nm-outer-shadow {
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+@mixin nm-inner-shadow {
+  box-shadow: inset 2px 1px 4px 0px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+$nm-radius: 4px;
+
+$nm-color: #23314b;
+$nm-danger: #dc3545;
+$nm-secondary: #6c757d;
+$nm-success: #28a745;
+$nm-info: #17a2b8;
+$nm-warning: #ffc107;
+$nm-disabled: #c7c7c7;

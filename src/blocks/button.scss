@@ -1,0 +1,44 @@
+.nm-button {
+  background: $nm-background;
+  border-radius: $nm-radius;
+  @include nm-outer-shadow;
+  font-size: 15px;
+  height: 36px;
+  padding: 5px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    @include nm-inner-shadow;
+  }
+  &:disabled {
+    opacity: 0.5;
+    background: $nm-disabled;
+    cursor: not-allowed;
+  }
+  &-danger {
+    color: $nm-danger;
+  }
+  &-secondary {
+    color: $nm-secondary;
+  }
+
+  &-success {
+    color: $nm-success;
+  }
+  &-info {
+    color: $nm-info;
+  }
+  &-warning {
+    color: $nm-warning;
+  }
+}
