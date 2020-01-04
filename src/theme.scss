@@ -1,5 +1,4 @@
 .nm-bg {
-   
   &-danger {
     background: $nm-danger;
     color: $nm-white;
@@ -24,6 +23,7 @@
 }
 
 .nm-text {
+    color: $nm-color;
   &-danger {
     color: $nm-danger;
   }
@@ -39,5 +39,24 @@
   }
   &-warning {
     color: $nm-warning;
+  }
+}
+
+@for $i from 1 through 250 {
+  .nm-square-#{$i} {
+    height: $i + px;
+    width: $i + px;
+  }
+}
+
+.nm-circle {
+  border-radius: 50%;
+}
+
+@for $i from 1 through 250 {
+  .nm-circle-#{$i} {
+    height: $i + px;
+    width: $i + px;
+    border-radius: 50%;
   }
 }
