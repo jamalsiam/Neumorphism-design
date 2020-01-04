@@ -1,0 +1,38 @@
+.nm-bg {
+  color: $nm-white;
+  &-danger {
+    background: $nm-danger;
+  }
+  &-secondary {
+    background: $nm-secondary;
+  }
+
+  &-success {
+    background: $nm-success;
+  }
+  &-info {
+    background: $nm-info;
+  }
+  &-warning {
+    background: $nm-warning;
+  }
+}
+
+.nm-text {
+  &-danger {
+    color: $nm-danger;
+  }
+  &-secondary {
+    color: $nm-secondary;
+  }
+
+  &-success {
+    color: $nm-success;
+  }
+  &-info {
+    color: $nm-info;
+  }
+  &-warning {
+    color: $nm-warning;
+  }
+}
