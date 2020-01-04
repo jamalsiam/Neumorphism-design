@@ -23,7 +23,7 @@
 }
 
 .nm-text {
-    color: $nm-color;
+  color: $nm-color;
   &-danger {
     color: $nm-danger;
   }
@@ -36,6 +36,9 @@
   }
   &-info {
     color: $nm-info;
+  }
+  &-link {
+    color: $nm-link;
   }
   &-warning {
     color: $nm-warning;
