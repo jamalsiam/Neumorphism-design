@@ -1,10 +1,11 @@
-.nm-button {
+.nm-icon {
   background: $nm-background;
   border-radius: $nm-radius;
   @include nm-outer-shadow;
-  font-size: 15px;
-  height: 36px;
-  padding: 5px 20px;
+  font-size: 25px;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -12,6 +13,7 @@
   transition: opacity, box-shadow 0.3s;
   border: none;
   cursor: pointer;
+  font-style: normal;
 
   &:hover {
     opacity: 0.8;
@@ -24,6 +26,10 @@
     opacity: 0.5;
     background: $nm-disabled;
     cursor: not-allowed;
+  }
+
+  &-circle {
+    border-radius: 50%;
   }
   &-danger {
     color: $nm-danger;
