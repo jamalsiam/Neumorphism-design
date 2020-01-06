@@ -1,0 +1,64 @@
+.nm-toggle {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 26px;
+  overflow: hidden;
+  border-radius: 4px;
+  @include nm-inner-shadow;
+  &--input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked {
+      & + .nm-toggle--slider {
+        background-color: $nm-info;
+        &:before {
+          -webkit-transform: translateX(27px);
+          -ms-transform: translateX(27px);
+          transform: translateX(27px);
+        }
+      }
+    }
+    &:focus {
+      & + .slider {
+        box-shadow: 0 0 1px #2196f3;
+      }
+    }
+  }
+
+  &-round {
+    border-radius: 34px;
+    .nm-toggle--slider {
+      &:before {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &--slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 4px;
+    &:before {
+      position: absolute;
+      box-shadow: inset -2px -2px 2px 0px rgba(97, 136, 195, 0.33);
+      content: "";
+      height: 17px;
+      width: 17px;
+      left: 4px;
+      bottom: 3px;
+      background-color: $nm-background;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border: 1px solid #d1d8e3;
+      border-radius: 4px;
+    }
+  }
+}
