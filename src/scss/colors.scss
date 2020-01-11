@@ -7,7 +7,11 @@ $nm-background: #e0e5ec;
 @mixin nm-inner-shadow {
   box-shadow: inset 2px 1px 4px 0px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
+
+
+
 $nm-radius: 4px;
+$font-size: 14px;
 
 $nm-color: #23314b;
 $nm-danger: #dc3545;
@@ -18,4 +22,30 @@ $nm-link: #007bff;
 $nm-warning: #ffc107;
 $nm-disabled: #c7c7c7;
 $nm-white: #ffffff;
+
+%nm-bg{
+  &-danger {
+    background: $nm-danger;
+    color: $nm-white;
+  }
+  &-secondary {
+    background: $nm-secondary;
+    color: $nm-white;
+  }
+  
+  &-success {
+    background: $nm-success;
+    color: $nm-white;
+  }
+  &-info {
+    background: $nm-info;
+    color: $nm-white;
+  }
+  &-warning {
+    background: $nm-warning;
+    color: $nm-white;
+  }
+  
+}
+
 

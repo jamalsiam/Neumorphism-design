@@ -1,0 +1,31 @@
+.nm-badge {
+  display: inline-block;
+  padding: 2px 5px;
+  font-size: $font-size ;
+  border-radius: $nm-radius;
+  background: $nm-color;
+  color: $nm-white;
+  @include nm-outer-shadow;
+
+  &-danger {
+    background: $nm-danger;
+    color: $nm-white;
+  }
+  &-secondary {
+    background: $nm-secondary;
+    color: $nm-white;
+  }
+
+  &-success {
+    background: $nm-success;
+    color: $nm-white;
+  }
+  &-info {
+    background: $nm-info;
+    color: $nm-white;
+  }
+  &-warning {
+    background: $nm-warning;
+    color: $nm-white;
+  }
+}
