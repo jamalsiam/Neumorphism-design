@@ -2,12 +2,11 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  vertical-align: text-bottom;
+  
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
-  -webkit-animation: spinner-grow 0.75s linear infinite;
-  animation: spinner-grow 0.75s linear infinite;
+  animation: spinner-animation 0.75s linear infinite;
   color: $nm-color;
   &-danger {
     color: $nm-danger;
@@ -30,7 +29,7 @@
   }
 }
 
-@keyframes spinner-grow {
+@keyframes spinner-animation {
   0% {
     transform: scale(0);
   }
