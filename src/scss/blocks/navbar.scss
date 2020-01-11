@@ -1,0 +1,45 @@
+.nm-nav {
+  position: fixed;
+  bottom: 0;
+  background: $nm-background;
+  right: 45px;
+  max-width: calc(100% - 90px);
+  min-width: 60%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  @include nm-outer-shadow;
+
+  @media screen and (max-width: 500px) {
+    right: 0;
+    min-width: 100%;
+  }
+
+  &-right {
+    right: 0;
+    min-width: unset;
+    top: 50px;
+    bottom: unset;
+    min-height: 60%;
+    max-height: 85%;
+    flex-direction: row-reverse;
+    writing-mode: vertical-rl;
+    border-bottom-left-radius: 10px;
+
+    .nm-nav_item-active {
+      box-shadow: inset -3px 0px 0px 0px $nm-color;
+    }
+  }
+
+  &_item {
+    padding: 8px;
+    cursor: pointer;
+    flex: 1 1;
+    max-width: 210px;
+    text-align: center;
+    &-active {
+      box-shadow: inset 0px -3px 0px 0px $nm-color;
+      font-weight: 700;
+    }
+  }
+}
