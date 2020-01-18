@@ -1,0 +1,51 @@
+//Card container
+.nm-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1100px;
+
+  &-card {
+    width: 320px;
+    margin: 20px;
+    padding: 40px 30px;
+    border-radius: 40px;
+    background-color: $nm-background;
+    box-shadow: -6px -6px 20px rgba(299, 299, 299, 1),
+      6px 6px 20px rgba(0, 0, 0, 0.1);
+
+    &-content {
+      position: relative;
+      margin-top: 20px;
+      align-items: center;
+      &-a {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 40px;
+        margin-top: 15px;
+        color: #32a3b1;
+        text-decoration: none;
+        box-shadow: -4px -4px 10px rgba(299, 299, 299, 1),
+          4px 4px 10px rgba(0, 0, 0, 0.1);
+        &:hover {
+          box-shadow: inset -4px -4px 10px rgba(299, 299, 299, 1),
+            inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        &-span {
+          display: block;
+          transform: scale(0.98);
+        }
+      }
+    }
+    &:hover {
+      box-shadow: inset -6px -6px 20px rgba(299, 299, 299, 0.5),
+        inset 6px 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    &-image__card {
+      position: relative;
+      text-align: center;
+    }
+  }
+}
