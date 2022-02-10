@@ -23,7 +23,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "babel-preset-minify": "^0.5.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "npm-watch": "^0.6.0"
   }
 }
